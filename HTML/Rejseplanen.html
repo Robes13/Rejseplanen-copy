@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roberts Rejseplan</title>
+    <link rel="stylesheet" href="./../CSS/Rejseplanen.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Velkommen til Robert's Rejseplan</h1>
+    </div>
+    <div class="content-container">
+        <div class="input">
+            <h1>Indtast venligst din placering</h1>
+            <input type="text" class="input--textbox" id="start-location" autocomplete="off">
+            <div id="start-location-suggestions" class="autocomplete-suggestions"></div>
+
+            <h1>Indtast venligst din destination</h1>
+            <input type="text" class="input--textbox" id="destination" autocomplete="off">
+            <div id="destination-suggestions" class="autocomplete-suggestions"></div>
+
+            <input type="datetime-local" class="input--datetime" id="triptime" autocomplete="off">
+            <button class="input--button" onclick="newSearch()">Søg</button>
+
+            <div class="rejseplanen-logo-container">
+                <div class="rejseplanen-logo">
+                    <hr class="rejseplanen-hr-left">
+                    <div class="rejseplanen-cirlce">
+                    </div>
+                    <hr class="rejseplanen-hr-right">
+                </div>
+            </div>
+        </div>
+        <div id="trip-container"></div>
+    </div>
+    <script src="./../Javascript/GetData.js"></script>
+</body>
+</html>

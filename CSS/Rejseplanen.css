@@ -1,0 +1,186 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Calibri';
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #001f3b;
+    font-size: 1.5vh;
+    color: aliceblue;
+    margin-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 6vh);
+}
+
+.input {
+    padding: 10px;
+    width: 18%;
+    padding: 2vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.input h1 {
+    margin: 0;
+    font-size: 2vh;
+    line-height: 1.5;
+}
+
+.input--textbox {
+    margin: 0;
+    padding: 0.5vh;
+    font-size: 1.5vh;
+}
+
+.input--button {
+    margin-top: 1vh;
+    padding: 1vh 2vh;
+    font-size: 2vh;
+}
+
+#trip-container {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow-y: auto; 
+}
+
+.trip {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.trip h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.leg {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.leg h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.leg p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.leg a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #007BFF;
+    background-color: #f1f1f1;
+}
+
+.leg a:hover {
+    background-color: #e1e1e1;
+}
+
+.autocomplete-suggestions {
+    position: fixed;
+    left: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    max-height: 150px; 
+    overflow-y: auto; 
+    z-index: 1000;
+    width: auto;
+    display: none;
+}
+
+.autocomplete-suggestion {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+    background-color: #ddd;
+}
+
+.autocomplete-suggestion.active {
+    background-color: #b8d4ff;
+}
+
+.rejseplanenlogo {
+    height: 40vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.rejseplanen-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.rejseplanen-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 362px;
+}
+
+.rejseplanen-hr-left {
+    height: 70px;
+    width: 50%;
+    outline: none;
+    border: none;
+    background: #ecbd01;
+}
+
+
+.rejseplanen-hr-right {
+    height: 70px;
+    width: 50%;
+    outline: none;
+    border: none;
+    background: #001f3b;
+}
+
+.rejseplanen-cirlce {
+    background: red;
+    border: 30px solid white;
+    outline: 30px solid #001f3b;
+    height: 70px;
+    width: 130px;
+    border-radius: 50%;
+    z-index: 10px;
+}
+
+
